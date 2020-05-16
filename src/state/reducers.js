@@ -1,4 +1,4 @@
-import { gameLoop, MAKE_CHOICE, CHOOSE_NAME, CHOOSE_GENDER } from "./actions";
+import { gameLoop, MAKE_CHOICE, SET_SETTINGS } from "./actions";
 export const INITIAL_STATE = {
   ending: false,
   name: null,
@@ -12,12 +12,9 @@ export default (state = INITIAL_STATE, action) => {
         ...state,
         ...action
       };
-    case CHOOSE_NAME:
+    case SET_SETTINGS:
       return Object.assign({}, state, {
-        name: action.name
-      })
-      case CHOOSE_GENDER:
-      return Object.assign({}, state, {
+        name: action.name,
         gender: action.gender
       })
 default:

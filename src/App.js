@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import Scene from './Scene';
 import Choices from './Choices';
 import Story from './Story';
-import { makeChoice, chooseName, chooseGender } from './state/actions';
+import { makeChoice, setSettings } from './state/actions';
 import './App.css';
+import Start from './Start';
 
 const stateToProps = state => ({
   tags: state.tags,
@@ -17,28 +18,23 @@ const stateToProps = state => ({
 
 const dispatchToProps = dispatch => ({
   makeChoice: idx => dispatch(makeChoice(idx)),
-  chooseName: name => dispatch(chooseName(name)),
-  chooseGender: gender => dispatch(chooseGender(gender))
+  setSettings: (name, gender) => dispatch(setSettings(name, gender))
 });
 
 const  App = (props) => {
-  if (!props.name) {
-    let name = null;
-	  while (name === null || name === '' || name === undefined) {
-		  name = prompt("Please enter your name", "Ducky McDuckface");
-	  }
-	  props.chooseName(name)
-  }
-  else if (props.ending) {
+  if (props.ending) {
     return (
       <div className="ending">The End!</div>
     );
   } else {
     return (
-      <div className="App">
-        <Scene tags={props.tags} />
-        <Story sceneText={props.sceneText} />
-        <Choices choices={props.currentChoices} makeChoice={props.makeChoice} />
+      <div className="Form">
+        {(!props.name || !props.gender) ? <Start setSettings={props.setSettings}/> :
+        <div className="App">
+          <Scene tags={props.tags} />
+          <Story sceneText={props.sceneText} />
+          <Choices choices={props.currentChoices} makeChoice={props.makeChoice} /> 
+          </div> }
       </div>
     );
   }

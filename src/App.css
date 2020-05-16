@@ -3,6 +3,11 @@
   flex-direction: column;
   display: flex;
 }
+.Form {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
 .scene {
   flex: 3;
   background-size: cover;

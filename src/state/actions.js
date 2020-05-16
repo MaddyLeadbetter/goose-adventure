@@ -3,8 +3,7 @@ import storyContent from '../ink_exports/test_goose_text.json';
 
 export const ink = new Story(storyContent);
 export const MAKE_CHOICE = "MAKE_CHOICE";
-export const CHOOSE_NAME = "CHOOSE_NAME";
-export const CHOOSE_GENDER = "CHOOSE_GENDER";
+export const SET_SETTINGS = "SET_SETTINGS";
 
 export const getGlobalVars = variablesState =>
   Object.keys(variablesState._globalVariables).reduce(
@@ -60,16 +59,10 @@ export const makeChoice = choiceIdx => {
 	}
 };
 
-export const chooseName = name => {
+export const setSettings = (name, gender) => {
 	return {
-		type: CHOOSE_NAME,
-		name
-	}
-}
-
-export const chooseGender = gender => {
-	return {
-		type: CHOOSE_GENDER,
+		type: SET_SETTINGS,
+		name,
 		gender
 	}
 }
