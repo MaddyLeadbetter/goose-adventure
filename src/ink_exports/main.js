@@ -1,7 +1,19 @@
+import { get_name } from '../utils';
+
 (function(storyContent) {
 
     // Create ink story from the content using inkjs
     var story = new inkjs.Story(storyContent);
+
+    // bind external functions
+    story.BindExternalFunction ("get_name", () => {
+        // 'prompt' is a built-in Javascript method
+        return "TEST TODO";
+    });
+
+    story.BindExternalFunction("get_bird_gender", () => {
+        return "TODO";
+    });
 
     // Global tags - those at the top of the ink file
     // We support:

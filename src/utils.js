@@ -1,4 +1,6 @@
 
+import { chooseName } from "./state/actions";
+
 //TODO:
 
 // get user's name
@@ -7,7 +9,7 @@ export const get_name = () => {
 	while (name === null || name === '' || name === undefined) {
 		name = prompt("Please enter your name", "Ducky McDuckface");
 	}
-	return name;
+	dispatch(chooseName(name))
 }
 
 // get_gender()

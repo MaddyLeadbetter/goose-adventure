@@ -3,6 +3,8 @@ import storyContent from '../ink_exports/test_goose_text.json';
 
 export const ink = new Story(storyContent);
 export const MAKE_CHOICE = "MAKE_CHOICE";
+export const CHOOSE_NAME = "CHOOSE_NAME";
+export const CHOOSE_GENDER = "CHOOSE_GENDER";
 
 export const getGlobalVars = variablesState =>
   Object.keys(variablesState._globalVariables).reduce(
@@ -57,6 +59,20 @@ export const makeChoice = choiceIdx => {
 		throw e;
 	}
 };
+
+export const chooseName = name => {
+	return {
+		type: CHOOSE_NAME,
+		name
+	}
+}
+
+export const chooseGender = gender => {
+	return {
+		type: CHOOSE_GENDER,
+		gender
+	}
+}
 
 function GameOverError(reason = "", ...rest) {
 	var instance = new Error(`Game Over, ${reason}`, ...rest);
