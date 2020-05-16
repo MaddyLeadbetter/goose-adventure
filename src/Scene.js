@@ -5,7 +5,7 @@ const backgroundImages = {
 	test: "https://blogs.thomsonreuters.com/answerson/wp-content/uploads/sites/3/2016/10/University-of-Waterloo-800x450.jpg"
 }
 
-const defaultImage = backgroundImages["test"];
+const defaultImage = "";
 
 export default ({ tags }) => {
 	return (
