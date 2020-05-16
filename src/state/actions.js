@@ -1,4 +1,4 @@
-import Story from 'inkjs/dist/ink.js';
+import { Story } from 'inkjs/dist/ink';
 import storyContent from '../test_goose/test_goose_text.json';
 
 export const ink = new Story(storyContent);
