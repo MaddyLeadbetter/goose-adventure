@@ -1,12 +1,10 @@
-import { get_name } from '../utils';
-
 (function(storyContent) {
 
     // Create ink story from the content using inkjs
     var story = new inkjs.Story(storyContent);
 
     // bind external functions
-    story.BindExternalFunction ("get_name", () => {
+    story.BindExternalFunction("get_name", () => {
         // 'prompt' is a built-in Javascript method
         return "TEST TODO";
     });
@@ -14,6 +12,9 @@ import { get_name } from '../utils';
     story.BindExternalFunction("get_bird_gender", () => {
         return "TODO";
     });
+
+    // allow external function fallbacks in ink
+    //story.allowExternalFunctionFallbacks = true;
 
     // Global tags - those at the top of the ink file
     // We support:
