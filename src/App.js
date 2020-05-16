@@ -1,9 +1,9 @@
 import React from 'react';
-import { connect } from "react-redux";
-import Scene from "./Scene";
-import Choices from "./Choices";
-import Story from "./Story";
-import { makeChoice } from "./state/actions";
+import { connect } from 'react-redux';
+import Scene from './Scene';
+import Choices from './Choices';
+import Story from './Story';
+import { makeChoice } from './state/actions';
 import './App.css';
 
 const stateToProps = state => ({

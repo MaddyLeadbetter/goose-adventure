@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 // TODO: background image urls can go here
 const backgroundImages = {
