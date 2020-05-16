@@ -1,5 +1,5 @@
 import { Story } from 'inkjs/dist/ink';
-import storyContent from '../test_goose/test_goose_text.json';
+import storyContent from '../ink_exports/test_goose_text.json';
 
 export const ink = new Story(storyContent);
 export const MAKE_CHOICE = "MAKE_CHOICE";
