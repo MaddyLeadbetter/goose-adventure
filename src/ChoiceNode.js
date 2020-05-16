@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default class ChoiceNode {
 	constructor(text, points) {
 		this.text = text;
