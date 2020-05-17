@@ -58,12 +58,17 @@
   align-items: center;
   height: 100%;
   flex-direction: column;
+  background-image: url(https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/SunsetEnding.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .credits {
   position: absolute;
   bottom: 4px;
   font-size: 14px;
   text-align: center;
+  color: #987462;
+  
 }
 
 select {

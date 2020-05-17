@@ -24,7 +24,7 @@ const dispatchToProps = dispatch => ({
 });
 
 const  App = (props) => {
-  if (false || props.ending) {
+  if (props.ending) {
     return (
       <div className="ending">
         <h1 className="title">The End!</h1>
