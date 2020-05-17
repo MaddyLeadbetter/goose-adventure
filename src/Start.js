@@ -45,7 +45,7 @@ class Start extends React.Component {
 							</select>
 						</div>
 						<div className="form-group">
-							<input type="submit" className="btn btn-primary btn-sm" value="Submit" disabled={!this.state.name || !this.state.gender}></input>
+							<input type="submit" className="btn btn-primary btn-sm" value="Start" disabled={!this.state.name || !this.state.gender}></input>
 						</div>
 					</form>
 				</div>
