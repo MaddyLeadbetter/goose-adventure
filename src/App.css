@@ -10,18 +10,20 @@
   align-items: center;
 }
 .title {
-  margin-top: 2em;
+  margin-top: 1.5em;
   font-size: 40px;
 }
 .card {
   width: 300px;
-  margin-top: 14px;
+  margin-top: 28px;
+  padding: 1rem 1rem 0 1rem;
 }
 .scene {
   flex: 3;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-top: 16px;
 }
 .story-text {
   padding: 1em 2em 1em;
@@ -46,6 +48,10 @@
   list-style-type: none;
   border-radius: 12px;
 }
+.choices li:hover {
+  background: rgb(74, 187, 221);
+  transition: background 0.2s ease;
+}
 .ending {
   display: flex;
   justify-content: center;
@@ -58,4 +64,40 @@
   bottom: 4px;
   font-size: 14px;
   text-align: center;
+}
+
+select {
+  padding: 4px;
+  border-radius: 4px;
+}
+
+select:focus,
+select:hover {
+  border-color: #007bff;
+  transition: border-color 0.2s ease;
+}
+
+.form-group .btn {
+  padding: 4px 36px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.form-group input:disabled {
+  opacity: 25%;
+}
+
+input[type=text] {
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=text]:focus,
+input[type=text]:hover {
+  border-color: #007bff;
+  transition: border-color 0.2s ease;
+  outline: none;
 }
