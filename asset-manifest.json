@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/goose-adventure/static/css/main.e7c870b5.chunk.css",
-    "main.js": "/goose-adventure/static/js/main.64d46b4b.chunk.js",
-    "main.js.map": "/goose-adventure/static/js/main.64d46b4b.chunk.js.map",
+    "main.js": "/goose-adventure/static/js/main.177a7346.chunk.js",
+    "main.js.map": "/goose-adventure/static/js/main.177a7346.chunk.js.map",
     "runtime-main.js": "/goose-adventure/static/js/runtime-main.12e5e3ed.js",
     "runtime-main.js.map": "/goose-adventure/static/js/runtime-main.12e5e3ed.js.map",
     "static/js/2.87d5b7df.chunk.js": "/goose-adventure/static/js/2.87d5b7df.chunk.js",
     "static/js/2.87d5b7df.chunk.js.map": "/goose-adventure/static/js/2.87d5b7df.chunk.js.map",
     "index.html": "/goose-adventure/index.html",
-    "precache-manifest.986800bf003a84bf115bd729f2fbf18d.js": "/goose-adventure/precache-manifest.986800bf003a84bf115bd729f2fbf18d.js",
+    "precache-manifest.4d34adb5695294fa284d0f7e4f3a75f9.js": "/goose-adventure/precache-manifest.4d34adb5695294fa284d0f7e4f3a75f9.js",
     "service-worker.js": "/goose-adventure/service-worker.js",
     "static/css/main.e7c870b5.chunk.css.map": "/goose-adventure/static/css/main.e7c870b5.chunk.css.map",
     "static/js/2.87d5b7df.chunk.js.LICENSE.txt": "/goose-adventure/static/js/2.87d5b7df.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.12e5e3ed.js",
     "static/js/2.87d5b7df.chunk.js",
     "static/css/main.e7c870b5.chunk.css",
-    "static/js/main.64d46b4b.chunk.js"
+    "static/js/main.177a7346.chunk.js"
   ]
 }
