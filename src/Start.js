@@ -1,5 +1,4 @@
 import React from 'react';
-import Scene from './Scene';
 import cover from './images/Goose banner.png'
 
 class Start extends React.Component {
