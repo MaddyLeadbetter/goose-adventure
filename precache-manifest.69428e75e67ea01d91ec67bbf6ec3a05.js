@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd89a83856a5268e61accba0846e55ef",
+    "revision": "ee4fdab6e371ca1b99cb1442abdcb343",
     "url": "/goose-adventure/index.html"
   },
   {
-    "revision": "e4b1ec405b121752f037",
+    "revision": "062ec6cebbde7980f942",
     "url": "/goose-adventure/static/css/main.e7c870b5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/goose-adventure/static/js/2.87d5b7df.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e4b1ec405b121752f037",
-    "url": "/goose-adventure/static/js/main.7c6e3ee8.chunk.js"
+    "revision": "062ec6cebbde7980f942",
+    "url": "/goose-adventure/static/js/main.9e9a3dbc.chunk.js"
   },
   {
     "revision": "46bf005cbf97d6944c4f",
