@@ -4,7 +4,7 @@ import React from 'react';
 const backgroundImages = {
 	cover: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/Goose%20banner.png",
 	You: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/You.png",
-	CliffEdge: "",
+	CliffEdge: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/CliffEdge.jpg",
 	"Coolgoose-Good": "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/Cool%20goose%20-%20Good.png",
 	CoolGooseJetski: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/CoolGooseJetski.jpg",
 	"Loon-Good": "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/Loon%20-%20Good.png",
