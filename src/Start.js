@@ -1,4 +1,5 @@
 import React from 'react';
+import Scene from './Scene';
 
 class Start extends React.Component {
 	constructor(props) {
@@ -28,6 +29,7 @@ class Start extends React.Component {
 				<h1 className="title">
 					Water Bird Dating Simulator
 				</h1>
+				<Scene tags={{background: "cover"}} />
 				<form onSubmit={this.handleSubmit}>
 					<div>
 						<p>What is your name: </p>

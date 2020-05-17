@@ -8,6 +8,7 @@ const backgroundImages = {
 const defaultImage = "";
 
 export default ({ tags }) => {
+	console.log(tags)
 	return (
 		<section
 			className="scene"
