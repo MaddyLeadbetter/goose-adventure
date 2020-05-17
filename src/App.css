@@ -27,12 +27,13 @@
   padding: 1em 2em 1em;
   text-align: left;
   overflow-y: scroll;
-  height: 150px;
+  height: 120px;
 }
 .choices {
   width: auto;
   background: rgba(255, 255, 255, 0.9);
   padding: 0 2em 1em;
+  height: 200px;
 }
 .choices ul {
   padding: 0;

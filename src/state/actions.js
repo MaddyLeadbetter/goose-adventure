@@ -31,25 +31,6 @@ export const getTags = tags =>
 		{}
 	);
 
-export const gameLoop1 = () => {
-	const sceneText = [];
-	let currentTags = [];
-	while (ink.canContinue) {
-		sceneText.push(ink.Continue());
-		currentTags = currentTags.concat(ink.currentTags);
-	}
-	const { currentChoices, variablesState } = ink;
-	if (!ink.canContinue && !currentChoices.length)
-		throw new GameOverError("no more choices");
-	return {
-		globals: getGlobalVars(variablesState),
-		tags: getTags(currentTags),
-		currentChoices,
-		sceneText,
-		currentTags
-	};
-};
-
 export const gameLoop = () => {
 	const sceneText = [];
 	let currentTags = [];
@@ -60,13 +41,17 @@ export const gameLoop = () => {
 	const { currentChoices, variablesState } = ink;
 	if (!ink.canContinue && !currentChoices.length)
 		throw new GameOverError("no more choices");
-	return {
+	let gameData = {
 		globals: getGlobalVars(variablesState),
-		tags: getTags(currentTags),
 		currentChoices,
 		sceneText,
 		currentTags
-	};
+	}
+	if (Object.keys(currentTags).length > 0) {
+		gameData.tags = getTags(currentTags);
+	}
+
+	return gameData;
 };
 
 export const makeChoice = choiceIdx => {
