@@ -34,9 +34,7 @@ const  App = (props) => {
   } 
   else if(!props.name || !props.gender) {
     return (
-      <div className="Form">
-        <Start setSettings={props.setSettings}/>
-      </div>
+      <Start setSettings={props.setSettings}/>
     );
   } else {
     return (

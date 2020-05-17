@@ -24,24 +24,29 @@ class Start extends React.Component {
 
 	render() {
 		return (
-			<form onSubmit={this.handleSubmit}>
-				<div>
-					<p>What is your name: </p>
-					<input type="text" value={this.state.name} onChange={this.handleNameChange}/>
-				</div>
-				<div>
-					<p>What gender do you want to date: </p>
-					<select value={this.state.gender} onChange={this.handleGenderChange}>
-						<option value="MALE">Male</option>
-						<option value="FEMALE">Female</option>
-						<option value="OTHER">Other</option>
-					</select>
-				</div>
-				<div>
-					<p></p>
-					<input type="submit" value="Submit" disabled={!this.state.name || !this.state.gender}></input>
-				</div>
-			</form>
+			<div className="Start">
+				<h1 className="title">
+					Water Bird Dating Simulator
+				</h1>
+				<form onSubmit={this.handleSubmit}>
+					<div>
+						<p>What is your name: </p>
+						<input type="text" value={this.state.name} onChange={this.handleNameChange}/>
+					</div>
+					<div>
+						<p>What gender do you want to date: </p>
+						<select value={this.state.gender} onChange={this.handleGenderChange}>
+							<option value="MALE">Male</option>
+							<option value="FEMALE">Female</option>
+							<option value="OTHER">Other</option>
+						</select>
+					</div>
+					<div>
+						<p></p>
+						<input type="submit" value="Submit" disabled={!this.state.name || !this.state.gender}></input>
+					</div>
+				</form>
+			</div>
 		);
 	}
 };

@@ -3,10 +3,13 @@
   flex-direction: column;
   display: flex;
 }
-.Form {
+.Start {
   text-align: center;
   flex-direction: column;
   display: flex;
+}
+.title {
+  padding: 2em;
 }
 .scene {
   flex: 3;
