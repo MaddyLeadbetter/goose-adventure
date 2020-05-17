@@ -8,7 +8,7 @@ const backgroundImages = {
 	"Coolgoose-Good": "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/Cool%20goose%20-%20Good.png",
 	CoolGooseJetski: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/CoolGooseJetski.jpg",
 	"Loon-Good": "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/Loon%20-%20Good.png",
-	LoonAndSwan: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/masterv/images/LoonAndSwan.JPG",
+	LoonAndSwan: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/LoonAndSwan.JPG",
 	stabbyloon: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/stabby%20loon.JPG",
 	"Swan-Good": "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/Swan%20-%20Good.png",
 	"Whitegoose-Good": "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/White%20goose%20-%20Good.png",
