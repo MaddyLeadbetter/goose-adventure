@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/goose-adventure/precache-manifest.e5d6ab5eb00d85268059f03ee513f13a.js"
+  "/goose-adventure/precache-manifest.5fe833fd6ee7daa01a838181caf229a7.js"
 );
 
 self.addEventListener('message', (event) => {
