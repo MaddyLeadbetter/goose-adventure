@@ -29,7 +29,9 @@ const  App = (props) => {
       <div className="ending">
         <h1 className="title">The End!</h1>
         <button type="button" className="btn btn-primary btn-lg" onClick={props.restartGame}>Restart</button>
-        <p className="credits">Created For TerribleHack VR by: Yangzi Guo, Milena Bukal, Maddy Leadbetter</p>
+        <p className="credits">Created For TerribleHack VR by: Yangzi Guo, Milena Bukal, Maddy Leadbetter<br></br>
+          Special thanks to environmental consultant Allie Leadbetter
+        </p>
       </div>
     );
   } 
