@@ -84,7 +84,7 @@ select:hover {
 }
 
 .form-group input:disabled {
-  opacity: 25%;
+  opacity: 0.25
 }
 
 input[type=text] {
