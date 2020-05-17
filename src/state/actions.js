@@ -4,6 +4,7 @@ import storyContent from '../ink_exports/test_goose_text3.json';
 export const ink = new Story(storyContent);
 export const MAKE_CHOICE = "MAKE_CHOICE";
 export const SET_SETTINGS = "SET_SETTINGS";
+export const RESTART_GAME = "RESTART_GAME";
 
 ink.BindExternalFunction("get_name", () => {
 	return '';
@@ -73,6 +74,10 @@ export const setSettings = (name, gender) => {
 		name,
 		gender
 	}
+}
+
+export const restartGame = () => {
+	return { type: RESTART_GAME };
 }
 
 function GameOverError(reason = "", ...rest) {

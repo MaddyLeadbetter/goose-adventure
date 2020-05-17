@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Scene from './Scene';
 import Choices from './Choices';
 import Story from './Story';
-import { makeChoice, setSettings } from './state/actions';
+import { makeChoice, setSettings, restartGame } from './state/actions';
 import './App.css';
 import Start from './Start';
 
@@ -18,14 +18,17 @@ const stateToProps = state => ({
 
 const dispatchToProps = dispatch => ({
   makeChoice: idx => dispatch(makeChoice(idx)),
-  setSettings: (name, gender) => dispatch(setSettings(name, gender))
+  setSettings: (name, gender) => dispatch(setSettings(name, gender)),
+  restartGame: () => dispatch(restartGame())
 });
 
 const  App = (props) => {
   if (props.ending) {
-    // TODO: add restart button
     return (
-      <div className="ending">The End!</div>
+      <div className="ending">
+        <h3>The End!</h3>
+        <button type="button" onClick={props.restartGame}>Restart</button>
+      </div>
     );
   } else {
     return (
