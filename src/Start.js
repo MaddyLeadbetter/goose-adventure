@@ -29,25 +29,26 @@ class Start extends React.Component {
 				<h1 className="title">
 					Water Bird Dating Simulator
 				</h1>
-				<Scene tags={{background: "cover"}} />
-				<form onSubmit={this.handleSubmit}>
-					<div>
-						<p>What is your name: </p>
-						<input type="text" value={this.state.name} onChange={this.handleNameChange}/>
-					</div>
-					<div>
-						<p>What gender do you want to date: </p>
-						<select value={this.state.gender} onChange={this.handleGenderChange}>
-							<option value="MALE">Male</option>
-							<option value="FEMALE">Female</option>
-							<option value="OTHER">Other</option>
-						</select>
-					</div>
-					<div>
-						<p></p>
-						<input type="submit" value="Submit" disabled={!this.state.name || !this.state.gender}></input>
-					</div>
-				</form>
+				<Scene className="cover" tags={{background: "cover"}} />
+				<div class="card">
+					<form className="form" onSubmit={this.handleSubmit}>
+						<div class="form-group">
+							<label>What is your name: </label>
+							<input type="text" value={this.state.name} onChange={this.handleNameChange}/>
+						</div>
+						<div class="form-group">
+							<label>What gender do you want to date: </label>
+							<select value={this.state.gender} onChange={this.handleGenderChange}>
+								<option value="MALE">Male</option>
+								<option value="FEMALE">Female</option>
+								<option value="OTHER">Other</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="submit" className="btn btn-primary btn-sm" value="Submit" disabled={!this.state.name || !this.state.gender}></input>
+						</div>
+					</form>
+				</div>
 			</div>
 		);
 	}

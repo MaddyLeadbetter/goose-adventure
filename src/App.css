@@ -7,9 +7,14 @@
   text-align: center;
   flex-direction: column;
   display: flex;
+  align-items: center;
 }
 .title {
-  padding: 2em;
+  margin: 2em;
+  font-size: 40px;
+}
+.form {
+  width: 300px;
 }
 .scene {
   flex: 3;
@@ -42,8 +47,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
   height: 100%;
-  font-size: 4em;
   flex-direction: column;
+}
+.credits {
+  position: absolute;
+  bottom: 10px;
+  font-size: 14px;
 }

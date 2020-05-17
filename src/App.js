@@ -24,11 +24,12 @@ const dispatchToProps = dispatch => ({
 });
 
 const  App = (props) => {
-  if (props.ending) {
+  if (false || props.ending) {
     return (
       <div className="ending">
-        <h3>The End!</h3>
-        <button type="button" onClick={props.restartGame}>Restart</button>
+        <h1 className="title">The End!</h1>
+        <button type="button" className="btn btn-primary btn-lg" onClick={props.restartGame}>Restart</button>
+        <p className="credits">Created For TerribleHack VR by: Yangzi Guo, Milena Bukal, Maddy Leadbetter</p>
       </div>
     );
   } 
