@@ -18,11 +18,9 @@ export default (state = INITIAL_STATE, action) => {
       ink.UnbindExternalFunction("get_name");
       ink.UnbindExternalFunction("get_bird_gender");
       ink.BindExternalFunction("get_name", () => {
-        console.log(action.name)
         return action.name;
       });
       ink.BindExternalFunction("get_bird_gender", () => {
-        console.log(action.gender)
         return action.gender;
       });
       return Object.assign({}, state, {
@@ -30,12 +28,7 @@ export default (state = INITIAL_STATE, action) => {
         gender: action.gender
       })
     case RESTART_GAME:
-    console.log("RESTARTING")
-      return Object.assign({}, state, {
-        ending: false,
-        name: '',
-        gender: ''
-      })
+      return Object.assign({}, state, INITIAL_STATE)
 default:
       return state;
   }

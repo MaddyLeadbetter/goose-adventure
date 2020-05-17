@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Scene from './Scene';
 import Choices from './Choices';
 import Story from './Story';
-import { makeChoice, setSettings, restartGame } from './state/actions';
+import { makeChoice, setSettings } from './state/actions';
 import './App.css';
 import Start from './Start';
 
@@ -19,7 +19,8 @@ const stateToProps = state => ({
 const dispatchToProps = dispatch => ({
   makeChoice: idx => dispatch(makeChoice(idx)),
   setSettings: (name, gender) => dispatch(setSettings(name, gender)),
-  restartGame: () => dispatch(restartGame())
+  restartGame: () => window.location.reload()
+//  restartGame: () => dispatch(restartGame())
 });
 
 const  App = (props) => {

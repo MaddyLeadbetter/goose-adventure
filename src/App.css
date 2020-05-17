@@ -14,14 +14,15 @@
   background-position: center center;
 }
 .story-text {
-  flex: 1;
-  padding: 2em;
+  padding: 1em 2em 1em;
   text-align: left;
+  overflow-y: scroll;
+  height: 150px;
 }
 .choices {
   width: auto;
   background: rgba(255, 255, 255, 0.9);
-  padding: 1em;
+  padding: 0 2em 1em;
 }
 .choices ul {
   padding: 0;
