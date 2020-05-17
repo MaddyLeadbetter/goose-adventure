@@ -30,15 +30,19 @@ const  App = (props) => {
         <button type="button" onClick={props.restartGame}>Restart</button>
       </div>
     );
-  } else {
+  } 
+  else if(!props.name || !props.gender) {
     return (
       <div className="Form">
-        {(!props.name || !props.gender) ? <Start setSettings={props.setSettings}/> :
-        <div className="App">
-          <Scene tags={props.tags} />
-          <Story sceneText={props.sceneText} />
-          <Choices choices={props.currentChoices} makeChoice={props.makeChoice} /> 
-          </div> }
+        <Start setSettings={props.setSettings}/>
+      </div>
+    );
+  } else {
+    return (
+      <div className="App">
+        <Scene tags={props.tags} />
+        <Story sceneText={props.sceneText} />
+        <Choices choices={props.currentChoices} makeChoice={props.makeChoice} /> 
       </div>
     );
   }
