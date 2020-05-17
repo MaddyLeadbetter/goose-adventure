@@ -6,7 +6,7 @@
     // bind external functions
     story.BindExternalFunction("get_name", () => {
         // 'prompt' is a built-in Javascript method
-        return "TEST TODO";
+        return "TODO";
     });
 
     story.BindExternalFunction("get_bird_gender", () => {

@@ -5,7 +5,7 @@ class Start extends React.Component {
 		super(props);
 		this.state = {
 			name: "",
-			gender: "male"
+			gender: "MALE"
 		}
 		this.handleNameChange = this.handleNameChange.bind(this);
 		this.handleGenderChange = this.handleGenderChange.bind(this);
@@ -32,8 +32,8 @@ class Start extends React.Component {
 				<div>
 					<p>What gender do you want to date: </p>
 					<select value={this.state.gender} onChange={this.handleGenderChange}>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
+						<option value="MALE">Male</option>
+						<option value="FEMALE">Female</option>
 					</select>
 				</div>
 				<div>

@@ -5,14 +5,12 @@ export const ink = new Story(storyContent);
 export const MAKE_CHOICE = "MAKE_CHOICE";
 export const SET_SETTINGS = "SET_SETTINGS";
 
-// bind external functions
 ink.BindExternalFunction("get_name", () => {
-	// 'prompt' is a built-in Javascript method
-	return "TEST TODO";
+	return '';
 });
 
 ink.BindExternalFunction("get_bird_gender", () => {
-	return "TODO";
+	return '';
 });
 
 export const getGlobalVars = variablesState =>
