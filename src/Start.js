@@ -1,5 +1,6 @@
 import React from 'react';
 import Scene from './Scene';
+import cover from './images/Goose banner.png'
 
 class Start extends React.Component {
 	constructor(props) {
@@ -29,7 +30,7 @@ class Start extends React.Component {
 				<h1 className="title">
 					Water Bird Dating Simulator
 				</h1>
-				<Scene className="cover" tags={{background: "cover"}} />
+				<img src={cover} alt="Banner" style={{height: '300px'}}/>
 				<div className="card">
 					<form className="form" onSubmit={this.handleSubmit}>
 						<div className="form-group">

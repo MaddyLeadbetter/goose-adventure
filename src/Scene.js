@@ -17,10 +17,9 @@ const backgroundImages = {
 	LoonAndCanadaGoose: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/images/LoonAndCanadaGoose.png",
 }
 
-const defaultImage = "";
+const defaultImage = backgroundImages.You;
 
 export default ({ tags }) => {
-	console.log(tags)
 	return (
 		<section
 			className="scene"

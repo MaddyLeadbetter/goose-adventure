@@ -10,11 +10,12 @@
   align-items: center;
 }
 .title {
-  margin: 2em;
+  margin-top: 2em;
   font-size: 40px;
 }
-.form {
+.card {
   width: 300px;
+  margin-top: 14px;
 }
 .scene {
   flex: 3;
