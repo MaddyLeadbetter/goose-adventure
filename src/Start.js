@@ -30,13 +30,13 @@ class Start extends React.Component {
 					Water Bird Dating Simulator
 				</h1>
 				<Scene className="cover" tags={{background: "cover"}} />
-				<div class="card">
+				<div className="card">
 					<form className="form" onSubmit={this.handleSubmit}>
-						<div class="form-group">
+						<div className="form-group">
 							<label>What is your name: </label>
 							<input type="text" value={this.state.name} onChange={this.handleNameChange}/>
 						</div>
-						<div class="form-group">
+						<div className="form-group">
 							<label>What gender do you want to date: </label>
 							<select value={this.state.gender} onChange={this.handleGenderChange}>
 								<option value="MALE">Male</option>
@@ -44,7 +44,7 @@ class Start extends React.Component {
 								<option value="OTHER">Other</option>
 							</select>
 						</div>
-						<div class="form-group">
+						<div className="form-group">
 							<input type="submit" className="btn btn-primary btn-sm" value="Submit" disabled={!this.state.name || !this.state.gender}></input>
 						</div>
 					</form>
