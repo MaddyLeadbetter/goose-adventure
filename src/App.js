@@ -20,7 +20,6 @@ const dispatchToProps = dispatch => ({
   makeChoice: idx => dispatch(makeChoice(idx)),
   setSettings: (name, gender) => dispatch(setSettings(name, gender)),
   restartGame: () => window.location.reload()
-//  restartGame: () => dispatch(restartGame())
 });
 
 const  App = (props) => {

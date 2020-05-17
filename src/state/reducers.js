@@ -1,4 +1,4 @@
-import { gameLoop, MAKE_CHOICE, SET_SETTINGS, ink, RESTART_GAME } from "./actions";
+import { gameLoop, MAKE_CHOICE, SET_SETTINGS, ink, RESTART_GAME, NEXT } from "./actions";
 
 export const INITIAL_STATE = {
   ending: false,
@@ -10,6 +10,11 @@ export const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case MAKE_CHOICE:
+      return {
+        ...state,
+        ...action
+      };
+    case NEXT:
       return {
         ...state,
         ...action

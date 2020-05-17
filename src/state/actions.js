@@ -5,6 +5,7 @@ export const ink = new Story(storyContent);
 export const MAKE_CHOICE = "MAKE_CHOICE";
 export const SET_SETTINGS = "SET_SETTINGS";
 export const RESTART_GAME = "RESTART_GAME";
+export const NEXT = "NEXT";
 
 ink.BindExternalFunction("get_name", () => {
 	return '';
@@ -30,12 +31,31 @@ export const getTags = tags =>
 		{}
 	);
 
-export const gameLoop = () => {
+export const gameLoop1 = () => {
 	const sceneText = [];
 	let currentTags = [];
 	while (ink.canContinue) {
 		sceneText.push(ink.Continue());
 		currentTags = currentTags.concat(ink.currentTags);
+	}
+	const { currentChoices, variablesState } = ink;
+	if (!ink.canContinue && !currentChoices.length)
+		throw new GameOverError("no more choices");
+	return {
+		globals: getGlobalVars(variablesState),
+		tags: getTags(currentTags),
+		currentChoices,
+		sceneText,
+		currentTags
+	};
+};
+
+export const gameLoop = () => {
+	const sceneText = [];
+	let currentTags = [];
+	if (ink.canContinue) {
+		sceneText.push(ink.Continue());
+		currentTags = ink.currentTags;
 	}
 	const { currentChoices, variablesState } = ink;
 	if (!ink.canContinue && !currentChoices.length)
@@ -67,6 +87,24 @@ export const makeChoice = choiceIdx => {
 		throw e;
 	}
 };
+
+export const next = () => {
+	try {
+		const gameData = gameLoop();
+		return {
+			type: NEXT,
+			...gameData
+		};
+	} catch (e) {
+		if (e instanceof GameOverError && e.reason === "no more choices") {
+			return {
+				type: MAKE_CHOICE,
+				ending: true
+			};
+		}
+		throw e;
+	}
+}
 
 export const setSettings = (name, gender) => {
 	return {
