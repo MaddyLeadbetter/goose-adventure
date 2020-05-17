@@ -23,6 +23,7 @@ const dispatchToProps = dispatch => ({
 
 const  App = (props) => {
   if (props.ending) {
+    // TODO: add restart button
     return (
       <div className="ending">The End!</div>
     );
