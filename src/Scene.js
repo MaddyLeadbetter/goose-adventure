@@ -16,6 +16,7 @@ const backgroundImages = {
 	BloodyRake: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/BloodyRake.png",
 	GooseAndCanadaGoose: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/GooseAndCanadaGoose.png",
 	LoonAndCanadaGoose: "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/LoonAndCanadaGoose.png",
+	"CanadaGoose-Bad": "https://raw.githubusercontent.com/MaddyLeadbetter/goose-adventure/master/src/images/Canada%20Goose%20-%20Bad.png",
 }
 
 const defaultImage = backgroundImages.You;
