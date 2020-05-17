@@ -34,6 +34,7 @@ class Start extends React.Component {
 					<select value={this.state.gender} onChange={this.handleGenderChange}>
 						<option value="MALE">Male</option>
 						<option value="FEMALE">Female</option>
+						<option value="OTHER">Other</option>
 					</select>
 				</div>
 				<div>
