@@ -1,9 +1,19 @@
 import { Story } from 'inkjs/dist/ink';
-import storyContent from '../ink_exports/test_goose_text1.json';
+import storyContent from '../ink_exports/test_goose_text2.json';
 
 export const ink = new Story(storyContent);
 export const MAKE_CHOICE = "MAKE_CHOICE";
 export const SET_SETTINGS = "SET_SETTINGS";
+
+// bind external functions
+ink.BindExternalFunction("get_name", () => {
+	// 'prompt' is a built-in Javascript method
+	return "TEST TODO";
+});
+
+ink.BindExternalFunction("get_bird_gender", () => {
+	return "TODO";
+});
 
 export const getGlobalVars = variablesState =>
   Object.keys(variablesState._globalVariables).reduce(
