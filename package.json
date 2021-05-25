@@ -2,7 +2,7 @@
   "name": "goose-adventure",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://waterbird.me/",
+  "homepage": "https://maddyleadbetter.github.io/goose-adventure/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
