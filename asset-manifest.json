@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/maddyleadbetter.github.io/goose-adventure/static/css/main.8207a860.chunk.css",
-    "main.js": "/maddyleadbetter.github.io/goose-adventure/static/js/main.515467f9.chunk.js",
-    "main.js.map": "/maddyleadbetter.github.io/goose-adventure/static/js/main.515467f9.chunk.js.map",
-    "runtime-main.js": "/maddyleadbetter.github.io/goose-adventure/static/js/runtime-main.b26e1cf3.js",
-    "runtime-main.js.map": "/maddyleadbetter.github.io/goose-adventure/static/js/runtime-main.b26e1cf3.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/maddyleadbetter.github.io/goose-adventure/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.5613b06d.chunk.js": "/maddyleadbetter.github.io/goose-adventure/static/js/2.5613b06d.chunk.js",
-    "static/js/2.5613b06d.chunk.js.map": "/maddyleadbetter.github.io/goose-adventure/static/js/2.5613b06d.chunk.js.map",
-    "index.html": "/maddyleadbetter.github.io/goose-adventure/index.html",
-    "precache-manifest.f3b049e339dc1db6e492c3e3985f48a7.js": "/maddyleadbetter.github.io/goose-adventure/precache-manifest.f3b049e339dc1db6e492c3e3985f48a7.js",
-    "service-worker.js": "/maddyleadbetter.github.io/goose-adventure/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/maddyleadbetter.github.io/goose-adventure/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.8207a860.chunk.css.map": "/maddyleadbetter.github.io/goose-adventure/static/css/main.8207a860.chunk.css.map",
-    "static/js/2.5613b06d.chunk.js.LICENSE.txt": "/maddyleadbetter.github.io/goose-adventure/static/js/2.5613b06d.chunk.js.LICENSE.txt",
-    "static/media/Goose banner.png": "/maddyleadbetter.github.io/goose-adventure/static/media/Goose banner.3cb9e0e5.png"
+    "main.css": "/goose-adventure/static/css/main.8207a860.chunk.css",
+    "main.js": "/goose-adventure/static/js/main.95b97823.chunk.js",
+    "main.js.map": "/goose-adventure/static/js/main.95b97823.chunk.js.map",
+    "runtime-main.js": "/goose-adventure/static/js/runtime-main.12e5e3ed.js",
+    "runtime-main.js.map": "/goose-adventure/static/js/runtime-main.12e5e3ed.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/goose-adventure/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.5613b06d.chunk.js": "/goose-adventure/static/js/2.5613b06d.chunk.js",
+    "static/js/2.5613b06d.chunk.js.map": "/goose-adventure/static/js/2.5613b06d.chunk.js.map",
+    "index.html": "/goose-adventure/index.html",
+    "precache-manifest.9e099d9a336e5ffe5579d58676d21508.js": "/goose-adventure/precache-manifest.9e099d9a336e5ffe5579d58676d21508.js",
+    "service-worker.js": "/goose-adventure/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/goose-adventure/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.8207a860.chunk.css.map": "/goose-adventure/static/css/main.8207a860.chunk.css.map",
+    "static/js/2.5613b06d.chunk.js.LICENSE.txt": "/goose-adventure/static/js/2.5613b06d.chunk.js.LICENSE.txt",
+    "static/media/Goose banner.png": "/goose-adventure/static/media/Goose banner.3cb9e0e5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b26e1cf3.js",
+    "static/js/runtime-main.12e5e3ed.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.5613b06d.chunk.js",
     "static/css/main.8207a860.chunk.css",
-    "static/js/main.515467f9.chunk.js"
+    "static/js/main.95b97823.chunk.js"
   ]
 }
