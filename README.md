@@ -1,3 +1,1 @@
-Play here:
-
-[waterbird.me](waterbird.me)
+A bird dating simulator.
