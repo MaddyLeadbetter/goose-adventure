@@ -13,11 +13,12 @@ const stateToProps = state => ({
   sceneText: state.sceneText,
   ending: state.ending,
   name: state.name,
-  gender: state.gender
+  gender: state.gender,
+  choiceHistory: state.choiceHistory
 });
 
 const dispatchToProps = dispatch => ({
-  makeChoice: idx => dispatch(makeChoice(idx)),
+  makeChoice: (idx, txt) => dispatch(makeChoice(idx, txt)),
   setSettings: (name, gender) => dispatch(setSettings(name, gender)),
   restartGame: () => window.location.reload(),
   next: () => dispatch(next()),
