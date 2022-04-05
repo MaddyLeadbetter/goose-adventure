@@ -54,12 +54,13 @@ export const gameLoop = () => {
 	return gameData;
 };
 
-export const makeChoice = choiceIdx => {
+export const makeChoice = (choiceIdx, choiceTxt) => {
 	ink.ChooseChoiceIndex(choiceIdx);
 	try {
 		const gameData = gameLoop();
 		return {
 			type: MAKE_CHOICE,
+			choiceTxt,
 			...gameData
 		};
 	} catch (e) {

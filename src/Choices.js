@@ -20,7 +20,7 @@ class Choices extends React.Component {
 				<h3>Make a decision...</h3>
 				<ul>
 					{choices.map(choice => (
-						<li key={choice.index} onClick={() => makeChoice(choice.index)}>
+						<li key={choice.index} onClick={() => makeChoice(choice.index, choice.text)}>
 							{choice.text}
 						</li>
 					))}

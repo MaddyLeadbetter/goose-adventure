@@ -13,11 +13,12 @@ const stateToProps = state => ({
   sceneText: state.sceneText,
   ending: state.ending,
   name: state.name,
-  gender: state.gender
+  gender: state.gender,
+  choiceHistory: state.choiceHistory
 });
 
 const dispatchToProps = dispatch => ({
-  makeChoice: idx => dispatch(makeChoice(idx)),
+  makeChoice: (idx, txt) => dispatch(makeChoice(idx, txt)),
   setSettings: (name, gender) => dispatch(setSettings(name, gender)),
   restartGame: () => window.location.reload(),
   next: () => dispatch(next()),
@@ -29,8 +30,8 @@ const  App = (props) => {
       <div className="ending">
         <h1 className="title">The End!</h1>
         <button type="button" className="btn btn-primary btn-lg" onClick={props.restartGame}>Restart</button>
-        <p className="credits">Created For TerribleHack VR by: Yangzi Guo, Milena Bukal, Maddy Leadbetter<br></br>
-          Special thanks to environmental consultant Allie Leadbetter
+        <p className="credits">Created For TerribleHack VR by: Yangzi, Milena, Maddy<br></br>
+          Special thanks to environmental consultant Allie
         </p>
       </div>
     );

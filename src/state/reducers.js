@@ -4,7 +4,8 @@ export const INITIAL_STATE = {
   ending: false,
   name: null,
   gender: null,
-  ...gameLoop()
+  ...gameLoop(),
+  choiceHistory: []
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -12,6 +13,7 @@ export default (state = INITIAL_STATE, action) => {
     case MAKE_CHOICE:
       return {
         ...state,
+        choiceHistory: [...state.choiceHistory, action.choiceTxt],
         ...action
       };
     case NEXT:
