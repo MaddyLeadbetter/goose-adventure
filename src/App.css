@@ -62,13 +62,18 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.feedback {
+  height: 50%;
+  width: 100%;
+  border: none;
+  margin: 0;
+}
 .credits {
   position: absolute;
   bottom: 4px;
   font-size: 14px;
   text-align: center;
   color: #987462;
-  
 }
 
 select {
