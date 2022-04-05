@@ -30,7 +30,8 @@ const  App = (props) => {
       <div className="ending">
         <h1 className="title">The End!</h1>
         <button type="button" className="btn btn-primary btn-lg" onClick={props.restartGame}>Restart</button>
-        <p className="credits">Created For TerribleHack VR (2020) by: Yangzi, Ena, and Maddy<br></br>
+        <iframe className="feedback" title="feedback" src="https://docs.google.com/forms/d/e/1FAIpQLSdf6O-pnttyiLxxNj8ymHHAhiC11k7i8SCcTAC-OSFArXjL_Q/viewform?embedded=true">Loading…</iframe>
+        <p className="credits">Created For TerribleHack VR by: Yangzi, Milena, Maddy<br></br>
           Special thanks to environmental consultant Allie
         </p>
       </div>
