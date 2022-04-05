@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/goose-adventure/static/css/main.8207a860.chunk.css",
-    "main.js": "/goose-adventure/static/js/main.95b97823.chunk.js",
-    "main.js.map": "/goose-adventure/static/js/main.95b97823.chunk.js.map",
+    "main.css": "/goose-adventure/static/css/main.4b666a05.chunk.css",
+    "main.js": "/goose-adventure/static/js/main.d68f6f51.chunk.js",
+    "main.js.map": "/goose-adventure/static/js/main.d68f6f51.chunk.js.map",
     "runtime-main.js": "/goose-adventure/static/js/runtime-main.12e5e3ed.js",
     "runtime-main.js.map": "/goose-adventure/static/js/runtime-main.12e5e3ed.js.map",
     "static/css/2.af3c1da9.chunk.css": "/goose-adventure/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.5613b06d.chunk.js": "/goose-adventure/static/js/2.5613b06d.chunk.js",
-    "static/js/2.5613b06d.chunk.js.map": "/goose-adventure/static/js/2.5613b06d.chunk.js.map",
+    "static/js/2.aa3c30fe.chunk.js": "/goose-adventure/static/js/2.aa3c30fe.chunk.js",
+    "static/js/2.aa3c30fe.chunk.js.map": "/goose-adventure/static/js/2.aa3c30fe.chunk.js.map",
     "index.html": "/goose-adventure/index.html",
-    "precache-manifest.9e099d9a336e5ffe5579d58676d21508.js": "/goose-adventure/precache-manifest.9e099d9a336e5ffe5579d58676d21508.js",
+    "precache-manifest.12a79ef5bb1621a020c74a2529560f43.js": "/goose-adventure/precache-manifest.12a79ef5bb1621a020c74a2529560f43.js",
     "service-worker.js": "/goose-adventure/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/goose-adventure/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.8207a860.chunk.css.map": "/goose-adventure/static/css/main.8207a860.chunk.css.map",
-    "static/js/2.5613b06d.chunk.js.LICENSE.txt": "/goose-adventure/static/js/2.5613b06d.chunk.js.LICENSE.txt",
+    "static/css/main.4b666a05.chunk.css.map": "/goose-adventure/static/css/main.4b666a05.chunk.css.map",
+    "static/js/2.aa3c30fe.chunk.js.LICENSE.txt": "/goose-adventure/static/js/2.aa3c30fe.chunk.js.LICENSE.txt",
     "static/media/Goose banner.png": "/goose-adventure/static/media/Goose banner.3cb9e0e5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.12e5e3ed.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.5613b06d.chunk.js",
-    "static/css/main.8207a860.chunk.css",
-    "static/js/main.95b97823.chunk.js"
+    "static/js/2.aa3c30fe.chunk.js",
+    "static/css/main.4b666a05.chunk.css",
+    "static/js/main.d68f6f51.chunk.js"
   ]
 }

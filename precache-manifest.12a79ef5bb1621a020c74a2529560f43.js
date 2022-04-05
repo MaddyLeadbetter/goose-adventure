@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "01de16bf3a95d4cc7829b0c552b88f5e",
+    "revision": "b1caf831eff36215a895239cddb5873f",
     "url": "/goose-adventure/index.html"
   },
   {
-    "revision": "b8968864cfa1373562d8",
+    "revision": "ee8a8949205760853acb",
     "url": "/goose-adventure/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "6ca714fa0d06d2c61b27",
-    "url": "/goose-adventure/static/css/main.8207a860.chunk.css"
+    "revision": "ca7cdb0de7427c8dd433",
+    "url": "/goose-adventure/static/css/main.4b666a05.chunk.css"
   },
   {
-    "revision": "b8968864cfa1373562d8",
-    "url": "/goose-adventure/static/js/2.5613b06d.chunk.js"
+    "revision": "ee8a8949205760853acb",
+    "url": "/goose-adventure/static/js/2.aa3c30fe.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/goose-adventure/static/js/2.5613b06d.chunk.js.LICENSE.txt"
+    "url": "/goose-adventure/static/js/2.aa3c30fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6ca714fa0d06d2c61b27",
-    "url": "/goose-adventure/static/js/main.95b97823.chunk.js"
+    "revision": "ca7cdb0de7427c8dd433",
+    "url": "/goose-adventure/static/js/main.d68f6f51.chunk.js"
   },
   {
     "revision": "46bf005cbf97d6944c4f",
